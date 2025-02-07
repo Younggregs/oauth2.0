@@ -67,7 +67,6 @@ class AuthController {
       if (state) {
         redirect_url.searchParams.append("state", state as string);
       }
-      console.log("redirectUrl.toString(): ", redirect_url.toString());
 
       // Redirect to client application.
       res.redirect(302, redirect_url.toString());
